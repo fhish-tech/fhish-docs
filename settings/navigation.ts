@@ -7,7 +7,7 @@ export const Navigations = [
   },
   {
     title: "Website",
-    href: "https://fhish.tech",
+    href: "https://fhish-tech.vercel.app",
     external: true,
   },
 ]
