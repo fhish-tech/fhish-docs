@@ -1,6 +1,35 @@
-# 📚 Fhish Documentation
-
 The **Fhish Documentation** is the primary source of technical and user-facing information for the Fhish ecosystem.
+
+## 🏗️ System Architecture
+
+```mermaid
+graph TD
+    subgraph Client ["Client Side"]
+        User["User App"]
+        WASM["fhish-wasm"]
+        User -->|Encrypt| WASM
+    end
+
+    subgraph OnChain ["Initia MiniEVM"]
+        SC["Smart Contract"]
+        Pre["FHE Precompiles"]
+        User -->|Encrypted Tx| SC
+        SC <-->|Private Logic| Pre
+    end
+
+    subgraph Infrastructure ["FHE Stack"]
+        Relayer["FHE Relayer"]
+        Gateway["FHE Gateway"]
+        Relayer <-->|Fetch| SC
+        Relayer <-->|Decrypt| Gateway
+        Gateway -->|Result| SC
+    end
+
+    style User fill:#2563eb,stroke:#fff,color:#fff
+    style SC fill:#7c3aed,stroke:#fff,color:#fff
+    style Gateway fill:#059669,stroke:#fff,color:#fff
+    style Relayer fill:#d97706,stroke:#fff,color:#fff
+```
 
 ## 🚀 Quick Start with v0.1.8
 
