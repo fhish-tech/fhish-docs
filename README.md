@@ -1,19 +1,19 @@
-# 📚 Polaris Protocol Documentation
+# 📚 Fhish Documentation
 
-The **Polaris Protocol Documentation** is the primary source of technical and user-facing information for the entire Polaris ecosystem. It provides comprehensive guides, API references, and architectural deep-dives for developers and merchants.
+The **Fhish Documentation** is the primary source of technical and user-facing information for the Fhish ecosystem. It provides comprehensive guides, API references, and architectural deep-dives for developers building private applications on Initia.
 
 ## 🚀 Key Content
-- **Introduction**: Overview of Polaris Protocol's mission and core values.
-- **Protocol Architecture**: Detailed explanation of the smart contract layer, consensus mechanism, and cross-chain messaging.
-- **Merchant Integration**: Step-by-step guides for onboarding merchants to the Polaris system.
-- **Developer API**: Technical references for interacting with Polaris's Convex and Next.js APIs.
-- **FHEVM Guide**: Documentation on how to use Fully Homomorphic Encryption for private asset swaps and lending.
+- **Introduction**: Overview of Fhish's mission to bring privacy to Initia.
+- **Protocol Architecture**: Detailed explanation of the FHE stack, Gateway, and Relayer.
+- **Developer SDK**: Technical references for the `fhish-sdk-v2`.
+- **FHE Guide**: Documentation on how to use Fully Homomorphic Encryption for private smart contracts.
+- **MiniEVM Integration**: Guides for deploying on Initia's interwoven stack.
 
 ## 🛠️ Tech Stack
 - **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Styling**: Tailwind CSS
 - **Interactions**: Framer Motion
-- **CMS/Content**: Markdown/MDX for easy and accessible documentation updates.
+- **Content**: MDX-based documentation
 
 ---
 
@@ -36,6 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the documentation po
 - `contents/`: All MDX documentation files.
 - `app/`: Next.js page structure for the documentation site.
 - `components/`: UI components for the documentation interface.
+- `settings/`: Configuration for site metadata and branding.
 - `lib/`: Logic for parsing MDX and generating sidebars.
 
 ## 🌍 Contributing
